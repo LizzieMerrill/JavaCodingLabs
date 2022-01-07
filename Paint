@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Paint {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      
+      int wallHeight;
+      int wallWidth;
+      int wallArea;
+      
+      System.out.print("Enter wall height (feet) : ");
+      wallHeight = scnr.nextInt();
+      
+      System.out.print("\nEnter wall width (feet) : ");
+      wallWidth = scnr.nextInt();
+      
+      wallArea = wallHeight * wallWidth;
+      
+      double painT;
+      painT = (double)wallArea / 350.0;
+      
+      double cansOfPain;
+      cansOfPain = Math.ceil(painT);
+      
+      //wallArea = wallHeight * wallWidth;
+      System.out.println("");
+      System.out.println("");
+      System.out.printf("Wall area : " + wallArea + " square feet");
+      
+      //painT = (double)wallArea / 350.0;
+      
+      System.out.printf("\nPaint needed : %.2f gallons\n", painT);
+      
+      //cansOfPain = Math.ceil(painT);
+      System.out.printf("Cans needed : " + (int)cansOfPain + " can(s)\n");
+      
+   }
+}
