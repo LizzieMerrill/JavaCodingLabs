@@ -1,0 +1,17 @@
+public class PrintKitty {
+   public static void main(String[] args) {
+      System.out.println(" /\\_/\\");
+      System.out.println("( o.o )");
+      System.out.println(" > ^ <");
+      
+      
+      
+      //output looks like this:
+      //
+      //   /\_/\
+      //  ( o.o )
+      //   > ^ <
+      //
+      
+   }
+}
