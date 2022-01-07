@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class PizzaParty {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      
+      System.out.print("Number of pizzas purchased : ");
+      int numPizzas = scnr.nextInt();
+      
+      System.out.print("Number of slices per pizza : ");
+      int slicesPerPizza = scnr.nextInt();
+      
+      System.out.print("Number of adults           : ");
+      int numAdults = scnr.nextInt();
+      
+      System.out.print("Number of children         : ");
+      int numKids = scnr.nextInt();
+      
+      
+      int totalSlices = numPizzas * slicesPerPizza;
+      int slicesForKids = totalSlices - (numAdults * 2);
+      //line 21 basically insinuates that each adult is served 2 slices first, then the kids are equally distributed whatever slices are left
+      int slicesPerKid = slicesForKids / numKids;
+      int leftovers = slicesForKids % numKids;
+      
+      
+      
+      System.out.print("Number of slices each child will get is : " + slicesPerKid);
+      System.out.print("\nNumber of slices left over is           : " + leftovers);      
+      
+   }
+}
