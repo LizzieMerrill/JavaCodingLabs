@@ -19,10 +19,10 @@ public class Paint {
       double painT;
       //Gallons of paint needed.
       painT = (double)wallArea / 350.0;
-      //One gallon of paint will cover 350 square feet.
+      //Given assignment info: One gallon of paint will cover 350 square feet.
       
       double cansOfPain;
-      //Cans of paint needed. Each can is 1 gallon.
+      //Cans of paint needed (given info: each can is 1 gallon).
       cansOfPain = Math.ceil(painT);
       
       System.out.println("");
