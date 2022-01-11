@@ -19,7 +19,7 @@ public class PizzaParty {
       
       int totalSlices = numPizzas * slicesPerPizza;
       int slicesForKids = totalSlices - (numAdults * 2);
-      //Adult are served 2 slices each, then kids are equally distributed the rest
+      //Adult are served 2 slices each, then kids are equally distributed the rest.
       int slicesPerKid = slicesForKids / numKids;
       int leftovers = slicesForKids % numKids;
       
