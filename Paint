@@ -17,22 +17,22 @@ public class Paint {
       wallArea = wallHeight * wallWidth;
       
       double painT;
+      //Gallons of paint needed.
       painT = (double)wallArea / 350.0;
+      //One gallon of paint will cover 350 square feet.
       
       double cansOfPain;
+      //Cans of paint needed. Each can is 1 gallon.
       cansOfPain = Math.ceil(painT);
       
-      //wallArea = wallHeight * wallWidth;
       System.out.println("");
       System.out.println("");
       System.out.printf("Wall area : " + wallArea + " square feet");
-      
-      //painT = (double)wallArea / 350.0;
-      
+
       System.out.printf("\nPaint needed : %.2f gallons\n", painT);
-      
-      //cansOfPain = Math.ceil(painT);
+     
       System.out.printf("Cans needed : " + (int)cansOfPain + " can(s)\n");
+      
       
    }
 }
