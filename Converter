@@ -4,7 +4,7 @@ public class Converter {
    public static void main(String[] args) {
       Scanner scnr = new Scanner(System.in);
       
-      //This program takes distance in meters and converts it to feet, and remaining inches.
+      //This program takes distance in meters and converts it to feet, and remaining inches
       
       System.out.print("Enter distance in meters : ");
       double meters = scnr.nextDouble();
