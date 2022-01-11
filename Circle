@@ -26,7 +26,7 @@ class Circle {
       System.out.println("Circumference      : " + (int)circumference);
       System.out.println("Area               : " + (int)area);
       System.out.println("Area of Semicircle : " + (int)semicircleArea);
-
+//Exact and rounded down properties of a circle.
 
      
   }
